@@ -1,0 +1,262 @@
+@import "./Loader.sass";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@font-face{
+  font-family:"Augillion";
+  src:url(font/Augillion.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+  height: 100%;
+
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 2.2ex;
+  color: #2c2723;
+
+  background: #ddd8cd; /*#141415*/
+}
+
+.container{
+  visibility: hidden;
+}
+/*======loader=======*/
+.loader{
+  font-size: large;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+.cube{ 
+  position: relative;
+  height:20px;
+  width:20px;
+  background-color: blue;
+}
+.loader> h1 >span{ 
+  height: 30vh;
+  width: 20px;
+  left: 0;
+  bottom: 30%;
+  transform-origin: bottom center;
+  
+}
+.char1{
+  animation: tran-rot 150s infinite ease-in-out;
+}
+@keyframes tran-rot {
+  20%{
+      transform: rotate(-90deg);
+  }
+  40%{
+      transform: rotate(-180deg);
+  }
+  80%{
+      transform: rotate(-360deg);
+    }
+}
+*/
+/* no scroll bar*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  display: block;
+}
+
+section{
+  margin:0;
+  padding:0;
+  height:100%;
+  display: block;
+}
+/*fill the screen*/
+#intro{
+  width:100vw;
+  height:100vh;
+}
+
+/*======== noise ========
+#intro {
+  z-index: -1;  
+  background: 
+    linear-gradient(10deg, #EFE8DC, transparent), 
+    url(https://grainy-gradients.vercel.app/noise.svg),contrast(170%) brightness(1000%);
+  animation-duration: 2s;
+  animation-name: shimmer;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes shimmer {
+  from {
+    filter: contrast(100%) brightness(100%);
+  }
+
+  to {
+    filter: contrast(50%) brightness(50%);
+  }
+}
+*/
+
+/*======== nav ========*/
+a {
+  color: #2c2723;
+  font-family: "Lato", sans-serif;
+}
+li,a {
+  transition: 0.3s;
+  display: inline;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 10px;
+}
+a:hover{
+  color: #3c40c6;
+}
+.social{
+  padding-right:0;
+  position: relative;
+  float: right;
+  top:0;
+}
+.categories{
+  padding-left:0;
+  position: absolute;
+  float: left;
+  bottom:2%;
+}
+
+
+
+/*======== title ========*/   /*TODO: text color*/
+.home{
+  position: absolute;
+  bottom:30%;
+  left:5%;
+  font-size: 1.25rem;
+  z-index: 2;
+}
+h1{
+  font-family: "Augillion";
+  font-size:5rem;
+  margin:0;
+}
+span {
+  position: relative;
+  font-family: 'IBM Plex Sans';
+  text-transform: uppercase;
+  font-size: 1.6em;
+  letter-spacing: 4px;
+  color : #3c40c6;
+  overflow: hidden;
+}
+  /*background: linear-gradient(90deg, #EFE8DC, #3A3134, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+@keyframes animate {
+  0% {
+    background-position: -400%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+*/
+/*======== scroll ========*/
+.aniWrap {
+  position: absolute;
+  right:5%;
+  bottom:5%;
+  display: flex;
+  width: 28px;
+}
+
+.mouse {
+  width: 28px;
+  height: 50px;
+  border: 2px solid #2c2723;
+  border-radius: 14px;
+}
+
+.scroller {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: black;
+
+  position: relative;
+  top: 10px;
+  left: 10px;
+  -webkit-animation: scrolls 1.3s ease-out infinite ; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes scrolls {
+    0%   {top: 30px; opacity: 1; height: 4px}
+    95% {top: -5px; opacity: 0; height: 8px}
+  	100% {top: 30px; opacity: 1; height: 4px}
+}
+
+/*======== portfolio ========*/
+.element-item{
+  width: 50%;
+  height: 500px;
+}
+img{
+  width: 100%;
+  height: 500px;
+  margin:0;
+	object-fit: cover;
+  transform: scale(1);
+}
+
+/*description*/
+.description {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin:0;
+  opacity: 0;
+  padding:5%;
+  color: #2c2723;
+  font-size: 150%;
+}
+.info{
+  margin:0;
+  color: #3A3134;
+  font-size: 50%;
+  padding: 10px 10px;
+  border-radius : 10px;
+  border: 2px solid #3A3134;
+  
+  text-align: center;
+  float: left;
+}
+
+/*hover on image*/
+.wrapper:hover img{
+  opacity:0.5;
+}
+.wrapper:hover .description{
+  opacity: 1;
+}
+
+/*======== cursor ========*/
+
+/*======== Loader ========*/
