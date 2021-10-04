@@ -36,36 +36,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
 }
-/*
-.cube{ 
-  position: relative;
-  height:20px;
-  width:20px;
-  background-color: blue;
-}
-.loader> h1 >span{ 
-  height: 30vh;
-  width: 20px;
-  left: 0;
-  bottom: 30%;
-  transform-origin: bottom center;
-  
-}
-.char1{
-  animation: tran-rot 150s infinite ease-in-out;
-}
-@keyframes tran-rot {
-  20%{
-      transform: rotate(-90deg);
-  }
-  40%{
-      transform: rotate(-180deg);
-  }
-  80%{
-      transform: rotate(-360deg);
-    }
-}
-*/
+
 /* no scroll bar*/
 body::-webkit-scrollbar {
   display: none;
@@ -86,29 +57,6 @@ section{
   width:100vw;
   height:100vh;
 }
-
-/*======== noise ========
-#intro {
-  z-index: -1;  
-  background: 
-    linear-gradient(10deg, #EFE8DC, transparent), 
-    url(https://grainy-gradients.vercel.app/noise.svg),contrast(170%) brightness(1000%);
-  animation-duration: 2s;
-  animation-name: shimmer;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes shimmer {
-  from {
-    filter: contrast(100%) brightness(100%);
-  }
-
-  to {
-    filter: contrast(50%) brightness(50%);
-  }
-}
-*/
 
 /*======== nav ========*/
 a {
@@ -139,8 +87,7 @@ a:hover{
 }
 
 
-
-/*======== title ========*/   /*TODO: text color*/
+/*======== title ========*/   
 .home{
   position: absolute;
   bottom:30%;
@@ -157,27 +104,12 @@ span {
   position: relative;
   font-family: 'IBM Plex Sans';
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   letter-spacing: 4px;
   color : #3c40c6;
   overflow: hidden;
 }
-  /*background: linear-gradient(90deg, #EFE8DC, #3A3134, #fff);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 
-@keyframes animate {
-  0% {
-    background-position: -400%;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
-*/
 /*======== scroll ========*/
 .aniWrap {
   position: absolute;
@@ -203,7 +135,7 @@ span {
   position: relative;
   top: 10px;
   left: 10px;
-  -webkit-animation: scrolls 1.3s ease-out infinite ; /* Chrome, Safari, Opera */
+  -webkit-animation: scrolls 1.3s ease-out infinite ; 
 }
 
 @-webkit-keyframes scrolls {
@@ -214,36 +146,42 @@ span {
 
 /*======== portfolio ========*/
 .element-item{
-  width: 50%;
+  display:block;
+  width: 50vw;
   height: 500px;
+  background-color:#3A3134;
+  line-height: 0;
 }
 img{
+  display:block;
   width: 100%;
   height: 500px;
   margin:0;
+  padding:0;
 	object-fit: cover;
-  transform: scale(1);
 }
 
 /*description*/
 .description {
+  font-family: "Augillion";
+  line-height: 2;
   z-index: 1;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 40%;
+  left: 5%;
   margin:0;
   opacity: 0;
   padding:5%;
-  color: #2c2723;
+  color: #ddd8cd;
   font-size: 150%;
 }
 .info{
   margin:0;
-  color: #3A3134;
+  color: #ddd8cd;
   font-size: 50%;
   padding: 10px 10px;
   border-radius : 10px;
-  border: 2px solid #3A3134;
+  border: 2px solid #ddd8cd;
   
   text-align: center;
   float: left;
@@ -251,10 +189,32 @@ img{
 
 /*hover on image*/
 .wrapper:hover img{
-  opacity:0.5;
+  opacity:0.3;
 }
 .wrapper:hover .description{
   opacity: 1;
+}
+
+/*========responsive===========*/
+@media screen and (max-width: 500px) {
+  /*nav*/
+  li,a {
+    transition: 0.3s;
+    padding: 14px 3px;
+  }
+  .social .categories{
+    font-size:3.3vw;
+  }
+  /*title*/
+  h1{
+    font-size:15vw;
+  }
+  /*gallery*/
+  .element-item{
+    width: 100%;
+    height: 500px;
+  }
+  
 }
 
 /*======== cursor ========*/
