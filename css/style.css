@@ -71,6 +71,7 @@ body {
     }
 }
 */
+
 /* no scroll bar*/
 body::-webkit-scrollbar {
   display: none;
@@ -91,6 +92,32 @@ section {
 #intro {
   width: 100vw;
   height: 100vh;
+}
+
+/*====about====*/
+#about {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 10%;
+  font-size: large;
+}
+
+.small-t {
+  font-size: smaller;
+}
+
+h2 {
+  font-family: "augillion";
+  font-size: 3rem;
+}
+
+.mojie
+
+/* :3 */
+  {
+  text-align: center;
+  margin-top: 10%;
 }
 
 /*======== noise ========
@@ -305,8 +332,9 @@ img {
     padding: 14px 3px;
   }
 
-  .social .categories {
-    font-size: 3.3vw;
+  .social,
+  .categories {
+    font-size: 4.5vw;
   }
 
   /*title*/
@@ -325,3 +353,10 @@ img {
 /*======== cursor ========*/
 
 /*======== Loader ========*/
+
+/*====footer=====*/
+footer {
+  text-align: center;
+  font-size: small;
+  padding-bottom: 5%;
+}
