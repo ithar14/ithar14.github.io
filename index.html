@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -18,7 +16,6 @@
     content="portfolio site, professional site, graphic design, UI, student portfolio, physics, digital artist, art, portraiture" />
   <!--icon-->
   <link rel="icon" type="image/png" href="img/icon.png">
-  <link rel="icon" href="img/icon.ico" />
   <link rel="apple-touch-icon" type="image/png" href="img/icon.png">
 
   <link href="css/style.css" rel="stylesheet" />
@@ -36,8 +33,9 @@
   end loader-->
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  
   <div id="main">
-    
+
     <!--intro--->
     <div class="container">
       <section id="intro">
@@ -45,9 +43,9 @@
         <!--socials nav bar-->
         <nav class="navigation">
           <ul class="social">
-            <!--TODO: about page-->
+
             <li>
-              <a class="hoverable" href="index.html">About</a>
+              <a class="hoverable" href="#about">About</a>
               <i class="ion-ios-circle-filled color"></i>
             </li>
             <li class="box-social">
@@ -127,7 +125,7 @@
           <a href="https://www.artstation.com/artwork/48DvYY" target="_blank" class="portfolio_item">
             <img src="https://cdnb.artstation.com/p/assets/images/images/041/501/957/large/kat-ithar-2.jpg?1631872062"
               alt="image" class="responsive" />
-            <p class="description">Coffee</br><span class="info">2D</span></p>
+            <p class="description">Coffee</br><span class="info">3D</span></p>
           </a>
         </div>
         <!-- end single work -->
@@ -139,7 +137,10 @@
               src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/590/017/datas/gallery.jpg"
               alt="image" class="responsive" />
             <p class="description">2Dimage3D<span class="info">A Python based program, that can generate 3D file/plot
-                from an image</span></p>
+                from an image
+              </span>
+            </p>
+            <!--TODO: about page-->
           </a>
         </div>
         <!-- end single work -->
@@ -208,12 +209,21 @@
           </a>
         </div>
         <!-- end single work -->
-
       </div>
     </section>
-
     <!--cursor-->
   </div>
+
+  <div id="about">
+    <h2>Hi!</h2>
+    <p class="small-t">thanks for stopping by</p>
+    <p>I am a final-year physics student at Tunis's Faculty of Mathematical, Physical, and Natural Sciences.
+      I'm a Future researcher (with a background in art and design) who is passionate about creative coding,
+      Quantum Information, Frontend development, Social Good and everything in between.</p>
+    <p>Currently experimenting with ways to combine code and design while building things that spark joy.</p>
+    <h3 class="mojie">🌿</h3>
+  </div>
+
   <!-- jQuery -->
   <script src="js/jquery-2.1.1.min.js"></script>
   <!-- isotope for filtering -->
@@ -222,3 +232,9 @@
   <script src="js/main.js"></script>
 
 </body>
+
+<footer>
+  <b>© ithar 2021</b>
+</footer>
+
+</html>
