@@ -101,6 +101,7 @@ section {
 
   padding: 10%;
   font-size: large;
+  font-size: 120%;
 }
 
 .small-t {
@@ -113,10 +114,10 @@ h2 {
 }
 
 .mojie
-
 /* :3 */
   {
   text-align: center;
+  position: relative;
   margin-top: 10%;
 }
 
@@ -315,7 +316,9 @@ img {
 
 /*hover on image*/
 .wrapper:hover img {
+  transition: 0.3s;
   opacity: 0.3;
+  width: 120%;
 }
 
 .wrapper:hover .description {
@@ -323,7 +326,11 @@ img {
 }
 
 /*responsive*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+  /*about*/
+  #about {
+    font-size: large;
+  }
 
   /*nav*/
   li,
@@ -353,6 +360,7 @@ img {
 /*======== cursor ========*/
 
 /*======== Loader ========*/
+
 
 /*====footer=====*/
 footer {
