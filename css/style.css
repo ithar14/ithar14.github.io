@@ -1,370 +1,270 @@
-@import "./Loader.sass";
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Inter:wght@500;700&family=Macondo&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
-
-@font-face {
-  font-family: "Augillion";
-  src: url(font/Augillion.otf);
-}
-
-* {
-  box-sizing: border-box;
+*::-webkit-scrollbar {
+  display: none;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-size: 2.2ex;
-  color: #2c2723;
-
-  background: #ddd8cd;
-  /*#141415*/
+  font-size: 2.5ex;
+  color: #002928;
+  font-family: Inter;
+  height: 100%;
+  width: 100%;
+  background-color: #F7F7F2;
 }
 
-.container {
-  visibility: hidden;
-}
-
-/*======loader=======*/
-.loader {
-  font-size: large;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+#main {
+  position: absolute;
+  top: 25%;
+  left: 52%;
   transform: translate(-50%, -50%);
-  position: 50% 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 550px;
 }
 
-/*
-.cube{ 
-  position: relative;
-  height:20px;
-  width:20px;
-  background-color: blue;
-}
-.loader> h1 >span{ 
-  height: 30vh;
-  width: 20px;
-  left: 0;
-  bottom: 30%;
-  transform-origin: bottom center;
-  
-}
-.char1{
-  animation: tran-rot 150s infinite ease-in-out;
-}
-@keyframes tran-rot {
-  20%{
-      transform: rotate(-90deg);
-  }
-  40%{
-      transform: rotate(-180deg);
-  }
-  80%{
-      transform: rotate(-360deg);
-    }
-}
-*/
-
-/* no scroll bar*/
-body::-webkit-scrollbar {
-  display: none;
-}
-
-div {
-  display: block;
-}
-
-section {
+ul {
   margin: 0;
   padding: 0;
+}
+
+#menu {
+  position: sticky;
+  float: right;
+  width: 20%;
   height: 100%;
+}
+
+#menu>label {
   display: block;
+  cursor: pointer;
 }
 
-/*fill the screen*/
-#intro {
-  width: 100vw;
-  height: 100vh;
+li {
+  list-style-type: none;
 }
 
-/*====about====*/
-#about {
-  width: 100vw;
-  height: 100vh;
-
-  padding: 10%;
-  font-size: large;
-  font-size: 120%;
+#home {
+  float: left;
+  width: 80%;
 }
 
-.small-t {
-  font-size: smaller;
-}
-
-h2 {
-  font-family: "augillion";
-  font-size: 3rem;
-}
-
-.mojie
-/* :3 */
-  {
-  text-align: center;
-  position: relative;
-  margin-top: 10%;
-}
-
-/*======== noise ========
-#intro {
-  z-index: -1;  
-  background: 
-    linear-gradient(10deg, #EFE8DC, transparent), 
-    url(https://grainy-gradients.vercel.app/noise.svg),contrast(170%) brightness(1000%);
-  animation-duration: 2s;
-  animation-name: shimmer;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes shimmer {
-  from {
-    filter: contrast(100%) brightness(100%);
-  }
-
-  to {
-    filter: contrast(50%) brightness(50%);
-  }
-}
-*/
-
-/*======== nav ========*/
-a {
-  color: #2c2723;
-  font-family: "Lato", sans-serif;
-}
-
-li,
-a {
-  transition: 0.3s;
+#home>ul>li {
   display: inline;
-  font-weight: bold;
+  float: left;
+  display: inline;
+  padding-right: 8px;
+}
+
+.hello,
+.world {
+  display: flex;
+  position: absolute;
+  color: #01514E;
+  font-family: Inter;
+  font-size: 130px;
+  font-weight: 700;
+}
+
+.world {
+
+  text-shadow: 4px -12px 9px rgba(255, 255, 255, 0.20);
+  top: 90px;
+  left: 5%;
+}
+
+.user {
+  position: absolute;
+  top: 230px;
+  right: 40%;
+  color: #01514E;
+  font-family: Macondo;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.folio {
+  position: absolute;
+  top: 240px;
+  right: 20%;
+  color: #01514E;
+  font-family: Beth Ellen;
+  font-size: 35px;
+}
+
+.bio {
+  position: absolute;
+  top: 330px;
+  left: 0;
+  width: 20%;
+  font-size: 18px;
+}
+
+.socials {
+
+  position: absolute;
+  top: 330px;
+  right: 12%;
+  font-size: 20px;
+}
+
+.socials>ul>li {
+
+  display: inline;
+  padding-right: 40px;
+}
+
+.socials>ul>li>a {
+  color: #01514E;
+}
+
+a {
+  color: #002928;
   text-decoration: none;
-  padding: 14px 10px;
 }
 
 a:hover {
-  color: #3c40c6;
+  color: grey;
 }
 
-.social {
-  padding-right: 0;
-  position: relative;
-  float: right;
-  top: 0;
-}
 
-.categories {
-  padding-left: 0;
+#projects {
+  display: none;
   position: absolute;
   float: left;
-  bottom: 2%;
+  width: 80%;
 }
 
-
-/*======== title ========*/
-/*TODO: text color*/
-.home {
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-  font-size: 1.25rem;
-  z-index: 2;
+#art,
+#dev,
+#homebtn,
+#projectbtn {
+  display: none;
 }
 
-h1 {
-  font-family: "Augillion";
-  font-size: 5rem;
-  margin: 0;
+.category>label {
+  cursor: pointer;
+  text-decoration: #ED6A5A wavy underline;
 }
 
-span {
-  position: relative;
-  font-family: 'IBM Plex Sans';
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  letter-spacing: 4px;
-  color: #3c40c6;
-  overflow: hidden;
+label:hover {
+  color: grey;
 }
 
-/*background: linear-gradient(90deg, #EFE8DC, #3A3134, #fff);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-
-@keyframes animate {
-  0% {
-    background-position: -400%;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
-*/
-/*======== scroll ========*/
-.aniWrap {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  display: flex;
-  width: 28px;
-}
-
-.mouse {
-  width: 28px;
-  height: 50px;
-  border: 2px solid #2c2723;
-  border-radius: 14px;
-}
-
-.scroller {
-  width: 4px;
-  height: 4px;
-  border-radius: 2px;
-  background: black;
-
-  position: relative;
-  top: 10px;
-  left: 10px;
-  -webkit-animation: scrolls 1.3s ease-out infinite;
-  /* Chrome, Safari, Opera */
-}
-
-@-webkit-keyframes scrolls {
-  0% {
-    top: 30px;
-    opacity: 1;
-    height: 4px
-  }
-
-  95% {
-    top: -5px;
-    opacity: 0;
-    height: 8px
-  }
-
-  100% {
-    top: 30px;
-    opacity: 1;
-    height: 4px
-  }
-}
-
-/*======== portfolio ========*/
-.element-item {
-  display: block;
-  width: 50vw;
-  height: 500px;
-  background-color: #3A3134;
-  line-height: 0;
+.project {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 35px;
 }
 
 img {
-  display: block;
   width: 100%;
-  height: 500px;
+  border-radius: 50px;
+  border: 4px solid #01514E;
+  margin-bottom: 12px;
+}
+
+.title,
+.date {
+  color: #002928;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.date {
+  float: right;
+}
+
+.desc {
+  display: block;
+  padding-top: 10px;
+  text-align: justify;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#cursor {
+  fill: #ED6A5A;
+  position: fixed;
+  transform: translateX(-50%) translateY(-50%);
+  left: 20vw;
+  top: 20vh;
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: 10000;
+}
+
+.anim1 {
+  display: flex;
   margin: 0;
   padding: 0;
-  object-fit: cover;
-}
-
-/*description*/
-.description {
-  font-family: "Augillion";
-  line-height: 2;
-  z-index: 1;
+  font-size: 50px;
   position: absolute;
-  top: 40%;
-  left: 5%;
-  margin: 0;
-  opacity: 0;
-  padding: 5%;
-  color: #ddd8cd;
-  font-size: 150%;
+  left: 30%;
+  top: 70px;
+  transform-origin: center;
+  animation: spin 2s linear infinite;
 }
 
-.info {
-  margin: 0;
-  color: #ddd8cd;
-  font-size: 50%;
-  padding: 10px 10px;
-  border-radius: 10px;
-  border: 2px solid #ddd8cd;
-
-  text-align: center;
-  float: left;
+.anim1>span {
+  margin: -11px;
 }
 
-/*hover on image*/
-.wrapper:hover img {
-  transition: 0.3s;
-  opacity: 0.3;
-  width: 120%;
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
-.wrapper:hover .description {
-  opacity: 1;
-}
-
-/*responsive*/
-@media screen and (max-width: 550px) {
-  /*about*/
-  #about {
-    font-size: large;
-  }
-
-  /*nav*/
-  li,
-  a {
-    transition: 0.3s;
-    padding: 14px 3px;
-  }
-
-  .social,
-  .categories {
-    font-size: 4.5vw;
-  }
-
-  /*title*/
-  h1 {
-    font-size: 15vw;
-  }
-
-  /*gallery*/
-  .element-item {
+@media only screen and (max-width: 600px) {
+  #main {
     width: 100%;
-    height: 500px;
   }
 
-}
+  #home {
+    width: 100%;
+  }
 
-/*======== cursor ========*/
+  #menu {
+    width: 100%;
+    display: inline;
+  }
 
-/*======== Loader ========*/
+  #menu>label {
+    float: left;
+    display: inline;
+    padding-right: 8px;
+  }
 
+  .intro {
+    position: absolute;
+    width: 100%;
+  }
 
-/*====footer=====*/
-footer {
-  text-align: center;
-  font-size: small;
-  padding-bottom: 5%;
+  .hello,
+  .world {
+
+    width: 100%;
+    font-size: 27vw;
+  }
+
+  #projects {
+    width: 100%;
+    top: 50px;
+  }
+
+  .category {
+    text-align: center;
+  }
+
+  .anim1 {
+    left: 80%;
+    top: 15%;
+  }
 }
