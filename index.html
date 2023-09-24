@@ -2,252 +2,136 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <!--customize the display of the page or of the surrounding UI-->
-  <meta name="theme-color" content="#3c40c6" />
-  <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--customize the display of the page or of the surrounding UI-->
+    <meta name="theme-color" content="#3c40c6" />
+    <meta name="robots" content="noindex" />
 
-  <title>ithar K.</title>
-  <meta name="description" content="Personal Portfolio" />
-  <meta name="keywords"
-    content="portfolio site, professional site, graphic design, UI, student portfolio, physics, digital artist, art, portraiture" />
-  <!--icon-->
-  <link rel="icon" type="image/png" href="img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="img/icon.png">
+    <title>ithar K.</title>
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords"
+        content="portfolio site, professional site, graphic design, UI, student portfolio, physics, digital artist, art, portraiture" />
+    <!--icon-->
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="img/icon.png">
 
-  <link href="css/style.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="loader">Loading</div>
-  <!--loader
-  <div class="loader">
-    <div class="cube">
-      <h1><span class="char1">L</span><br /><span class="char2">O</span><br /><span class="char3">D</span><br /><span
-          class="char4">I</span><br /><span class="char5">N</span><br /><span class="char6">G</span><br /></h1>
-    </div>
-  </div>
-  end loader-->
 
-  <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
 
-  <div id="main">
 
-    <!--intro--->
-    <div class="container">
-      <section id="intro">
 
-        <!--socials nav bar-->
-        <nav class="navigation">
-          <ul class="social">
+    <div class="anim1"><span>❖</span><span>❖</span></div>
 
-            <li>
-              <a class="hoverable" href="#about">About</a>
-              <i class="ion-ios-circle-filled color"></i>
-            </li>
-            <li class="box-social">
-              <a class="hoverable" href="https://github.com/ithar14" target="_blank"> Github </a>
-            </li>
-            <li class="box-social">
-              <a class="hoverable" href="https://codepen.io/ithar" target="_blank"> Codepen </a>
-            </li>
-            <!--<li class="box-social">
-              <a class="hoverable" href="https://www.youtube.com/channel/UCY-MpJ3S-08BlVPU8uXIRig" target="_blank">
-                youtube
-              </a>
-            </li>-->
-            <li class="box-social">
-              <a href="https://www.artstation.com/ithar" target="_blank"> Artstation </a>
-            </li>
-          </ul>
-        </nav>
-        <!--end socials nav bar-->
+    <div id="main">
+        <section id="menu">
+            <input type="radio" id="homebtn" name="homebth"><label for="homebtn" id="homelabel" onclick="home();">
+                home</label>
 
-        <!--Title-->
-        <div class="home">
-          <div class="title">
-            <h1>ithar K.</h1>
-            <p class="an"><b><span id="txt">Digital Artist 🌿</span></p></b>
+            <input type="radio" id="projectbtn" name="projectbtn"><label for="projectbtn" id="projectlabel"
+                onclick="projects();" style="color:#0029284A;"> projects</label>
 
-          </div>
-        </div>
-        <!--end Title-->
+            <label><a href="#" style="color:#0029284A;">resume</a></label>
+        </section>
 
-        <!--categories-->
-        <div class="portfolio-filter">
-          <nav class="navigation">
-            <ul class="categories">
-              <li>
-                <a href="" class="active" data-filter="*">All.</a>
-              </li>
-              <li>
-                <a href="" data-filter=".2D">2D.</a>
-              </li>
-              <li>
-                <a href="" data-filter=".3D">3D.</a>
-              </li>
-
-              <li>
-                <a href="" data-filter=".web">Web.</a>
-              </li>
-              <li>
-                <a href="" data-filter=".ui">UI.</a>
-              </li>
-              <li>
-                <a href="" data-filter=".soft">Software.</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!--end categories-->
-
-        <!--scroll-->
-        <div class="aniWrap">
-          <div class="mouse">
-            <div class="scroller">
+        <section id="home">
+            <div class="intro">
+                <span class="hello"><span>h</span><span>e</span><span>l</span><span>l</span><span>o</span></span>
+                <span class="world">World!</span>
+                <span class="user">this is ithar's</span>
+                <span class="folio">Portfolio</span>
+                <span class="bio"> blablablabalablabalaababla</span>
             </div>
-          </div>
-        </div>
-        <!--end scroll-->
+            <div class="socials">
 
-      </section>
+                <ul>
+                    <li><a href="https://codepen.io/ithar" class="fa fa-codepen" target="_blank"></a></li>
+                    <li><a href="https://github.com/ithar14" class="fa fa-github" target="_blank"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ithark/" class="fa fa-linkedin" target="_blank"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="category">
+                <input type="checkbox" id="art" name="art" checked><label for="art" id="artchbxlabel" onclick="artpr()">
+                    art</label><b style="color:#ED6A5A;">↴</b>
+                <span>&</span>
+                <input type="checkbox" id="dev" name="dev" checked><label for="dev" id="devchbxlabel" onclick="devpr()">
+                    dev</label><b style="color:#ED6A5A;">↴</b>
+            </div>
+            <!--
+            <div class="work">
+
+                <div class="project dev">
+                    <img src="img\bibVis.png">
+                    <span class="title">.bibVis</span>
+                    <span class="date">2023</span>
+                    <span class="desc">evaluate your BibTex files and generate charts by Year, Top Journals, and Top
+                        Authors.</span>
+                </div>
+
+                <div class="project dev">
+                    <img src="img\quuadio.gif">
+                    <span class="title">Quuadio</span>
+                    <span class="date">2021</span>
+                    <span class="desc">turn words into sound the quantum way</span>
+                </div>
+
+                <div class="project art">
+                    <img
+                        src="https://cdnb.artstation.com/p/assets/images/images/041/501/957/large/kat-ithar-2.jpg?1631872062">
+                    <span class="title">c o f f e e</span>
+                    <span class="date">2022</span>
+                    <span class="desc">a 3D model of a coffe cup made with blender.</span>
+                </div>
+
+                <div class="project dev">
+                    <img
+                        src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/590/017/datas/gallery.jpg">
+                    <span class="title">2Dimage3D</span>
+                    <span class="date">2021</span>
+                    <span class="desc">a python based program that turns a an image to a 3D plot/file</span>
+                </div>
+
+                <div class="project art">
+                    <img
+                        src="https://cdnb.artstation.com/p/assets/images/images/030/016/193/large/kat-ithar-too-much-to-handle2.jpg?1599335449">
+                    <span class="title">too much to hand_le</span>
+                    <span class="date">2020</span>
+                    <span class="desc"></span>
+                </div>
+
+                <div class="project art">
+                    <img
+                        src="https://cdna.artstation.com/p/assets/images/images/030/659/596/large/kat-ithar-lime.jpg?1601285162">
+                    <span class="title">Lime</span>
+                    <span class="date">2020</span>
+                    <span class="desc"></span>
+                </div>
+
+            </div>
+            -->
+        </section>
     </div>
-    <!--end intro-->
 
-    <section id="portfolio">
-      <div class="portfolio-container grid">
-        
-        <!-- single work -->
-        <div class="element-item wrapper web ui">
-          <a href="pages/quuadio.html"  class="portfolio_item">
-            <img src="img/quuadio.gif"
-              alt="image" class="responsive" />
-            <p class="description">Quuadio</br><span class="info">generative Art</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
+    <div id="cursor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 61 61" fill="none">
+            <circle cx="30.5" cy="30.5" r="30.5" fill="#ED6A5A" />
+        </svg>
+    </div>
 
-        <!-- single work -->
-        <div class="element-item wrapper 3D">
-          <a href="https://www.artstation.com/artwork/48DvYY" target="_blank" class="portfolio_item">
-            <img src="https://cdnb.artstation.com/p/assets/images/images/041/501/957/large/kat-ithar-2.jpg?1631872062"
-              alt="image" class="responsive" />
-            <p class="description">Coffee</br><span class="info">3D</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper soft">
-          <a href="pages/2Dimage3D.html" class="portfolio_item">
-            <img
-              src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/590/017/datas/gallery.jpg"
-              alt="image" class="responsive" />
-            <p class="description">2Dimage3D<span class="info">A Python based program, that can generate 3D file/plot
-                from an image
-              </span>
-            </p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper 2D">
-          <a href="https://www.artstation.com/artwork/ZGZWAx" target="_blank" class="portfolio_item">
-            <img
-              src="https://cdnb.artstation.com/p/assets/images/images/035/178/319/large/kat-ithar-huh1.jpg?1614284951"
-              alt="image" class="responsive" />
-            <p class="description">Lean on</br><span class="info">2D</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper 2D">
-          <a href="https://www.artstation.com/artwork/ZG9Y5R" target="_blank" class="portfolio_item">
-            <img
-              src="https://cdnb.artstation.com/p/assets/images/images/034/507/129/large/kat-ithar-sleep.jpg?1612469211"
-              alt="image" class="responsive" />
-            <p class="description">colors</br><span class="info">2D</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper 2D">
-          <a href="https://www.artstation.com/artwork/AqQYxy" target="_blank" class="portfolio_item">
-            <img
-              src="https://cdnb.artstation.com/p/assets/images/images/030/016/193/large/kat-ithar-too-much-to-handle2.jpg?1599335449"
-              alt="image" class="responsive" />
-            <p class="description">too much to hand_le</br><span class="info">2D</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper ui">
-          <a href="https://www.behance.net/gallery/105416135/Newsblog-app" target="_blank" class="portfolio_item">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/190861105416135.5f7892680282b.gif"
-              alt="image" class="responsive" />
-            <p class="description">News app</br><span class="info">UI made with invision</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper 2D">
-          <a href="https://www.artstation.com/artwork/lxz4ne" target="_blank" class="portfolio_item">
-            <img
-              src="https://cdna.artstation.com/p/assets/images/images/030/659/596/large/kat-ithar-lime.jpg?1601285162"
-              alt="image" class="responsive" />
-            <p class="description">Lime</br><span class="info">2D</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-
-        <!-- single work -->
-        <div class="element-item wrapper ui web">
-          <a href="https://www.behance.net/gallery/97438321/DailyUI-012?tracking_source=project_owner_other_projects"
-            target="_blank" class="portfolio_item">
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/28cc2f97438321.5ec518c89d6ce.gif"
-              alt="image" class="responsive" />
-            <p class="description">E-commerce</br><span class="info">UI/Web made with HTML5/JS</span></p>
-          </a>
-        </div>
-        <!-- end single work -->
-      </div>
-    </section>
-    <!--cursor-->
-  </div>
-
-  <div id="about">
-    <h2>Hi!</h2>
-    <p class="small-t">thanks for stopping by </p>
-    <p>
-      I am a final-year physics student at Tunis's Faculty of Mathematical, Physical, and Natural Sciences.
-      I'm a Future researcher (with a background in art and design) who is passionate about creative coding,
-      Quantum Information, Frontend development, Social Good and everything in between.</p>
-    <p>
-      Currently experimenting with ways 
-      to combine code and design while building things that spark joy.
-    </p>
-    <h3 class="mojie">🌿</h3>
-  </div>
-
-  <!-- jQuery -->
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <!-- isotope for filtering -->
-  <script src="js/isotope.pkgd.min.js"></script>
-  <!--  custom script -->
-  <script src="js/main.js"></script>
+    <!--  custom script -->
+    <script src="js/main.js"></script>
 
 </body>
 
-<footer>
-  <b>© ithar 2021</b>
-</footer>
+
 
 </html>
