@@ -246,14 +246,28 @@ img {
     position: absolute;
     width: 100%;
   }
-
-  .hello,
-  .world {
-
-    width: 100%;
-    font-size: 27vw;
+  .hello,.world{
+    
+    width:100%;
+    font-size:27vw;
   }
-
+  .user{
+    padding-top:3%;
+    bottom:40%;
+    right:20%;
+  }
+  .folio{
+    padding-top:2%;
+    right : 5%;
+  }
+  .bio{
+    width:60%;
+  }
+  .socials{
+    padding-top:3%;
+    bottom:0;
+    right:0;
+  }
   #projects {
     width: 100%;
     top: 50px;
