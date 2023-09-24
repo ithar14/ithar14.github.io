@@ -66,7 +66,7 @@ function devpr() {
 }
 
 
-fetch('projects.json')
+fetch('https://raw.githubusercontent.com/ithar14/ithar14.github.io/master/js/projects.json')
   .then(response => {
     return response.json();
   }).then(data => {
