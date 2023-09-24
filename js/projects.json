@@ -4,7 +4,7 @@
     "month":"2",
     "desc":"evaluate your BibTex files and generate charts by Year, Top Journals, and Top Authors.",
     "img":"https://github.com/ithar14/bibVis/raw/main/src/Logo.png",
-    "url":"ithar14.github.io/bibVis/",
+    "url":"bibVis/",
     "class":"dev"
  },
  {
