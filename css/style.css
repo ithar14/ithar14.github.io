@@ -205,8 +205,8 @@ img {
   padding: 0;
   font-size: 50px;
   position: absolute;
-  left: 30%;
-  top: 70px;
+  left: -15%;
+  top: -50%;
   transform-origin: center;
   animation: spin 2s linear infinite;
 }
