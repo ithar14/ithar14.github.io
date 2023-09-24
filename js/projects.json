@@ -1,0 +1,55 @@
+[{
+    "title":".bibVis",
+    "year":"2023",
+    "month":"2",
+    "desc":"evaluate your BibTex files and generate charts by Year, Top Journals, and Top Authors.",
+    "img":"https://github.com/ithar14/bibVis/raw/main/src/Logo.png",
+    "url":"ithar14.github.io/bibVis/",
+    "class":"dev"
+ },
+ {
+    "title":"Quuadio",
+    "year":"2022",
+    "month":"1",
+    "desc":"turn words into sound the quantum way",
+    "img":"..\\img\\quuadio.gif",
+    "url":"..\\pages\\quuadio.html",
+    "class":"dev"
+ },
+ {
+   "title":"c o f f e e",
+   "year":"2021",
+   "month":"11",
+   "desc":"a 3D model of a coffe cup made with blender.",
+   "img":"https://cdnb.artstation.com/p/assets/images/images/041/501/957/large/kat-ithar-2.jpg?1631872062",
+   "url":"https://www.artstation.com/artwork/48DvYY",
+   "class":"art"
+ },
+ {
+    "title":"2Dimage3D",
+    "year":"2021",
+    "month":"6",
+    "desc":"a python based program that turns a an image to a 3D plot/file",
+    "img":"https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/590/017/datas/gallery.jpg",
+    "url":"..\\pages\\2Dimage3D.html",
+    "class":"dev"
+ },
+ {
+    "title":"too much to hand_le",
+    "year":"2020",
+    "month":"9",
+    "desc":"",
+    "img":"https://cdnb.artstation.com/p/assets/images/images/030/016/193/large/kat-ithar-too-much-to-handle2.jpg?1599335449",
+    "url":"https://www.artstation.com/artwork/AqQYxy",
+    "class":"art"
+  },
+  {
+    "title":"Lime",
+    "year":"2020",
+    "month":"8",
+    "desc":"",
+    "img":"https://cdna.artstation.com/p/assets/images/images/030/659/596/large/kat-ithar-lime.jpg?1601285162",
+    "url":"https://www.artstation.com/artwork/lxz4ne",
+    "class":"art"
+  }
+]
