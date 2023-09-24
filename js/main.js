@@ -1,48 +1,104 @@
-//change intro text
-var Text = ['Digital Artist ✨', 'web UI developer 🌿', 'physics student ☕']; 
-var randNum = Math.round( Math.random() * (Text.length-1) ); 
-var i =0
-function ChangeText(){
-  document.getElementById('txt').innerHTML = Text[i];
-  if(i < Text.length-1){
-    i++;
-  }
-  else{
-    i = 0;
-  }
-  setTimeout("ChangeText();",2500);
+function home() {
+  const home = document.getElementById("home");
+  const projects = document.getElementById("projects");
+  const labelhm = document.getElementById("homelabel");
+  const labelpr = document.getElementById("projectlabel");
+  projects.style.display = "none";
+  home.style.display = "block";
+  labelhm.style.color = "#002928";
+  labelpr.style.color = "#0029284A";
 }
-        
-ChangeText();
-//loader
-$(window).on("load",function(){
-  $(".loader").fadeOut("slow");
-  $(".container").css("visibility", "visible");
-});
 
-$(document).ready(function () {
-  //  isotope
-  var $container = $(".portfolio-container");
+function projects() {
+  const home = document.getElementById("home");
+  const projects = document.getElementById("projects");
+  const labelhm = document.getElementById("homelabel");
+  const labelpr = document.getElementById("projectlabel");
+  home.style.display = "none";
+  projects.style.display = "block";
 
-  $container.isotope({
-    filter: "*",
-  });
+  labelhm.style.color = "#0029284A";
+  labelpr.style.color = "#002928";
+}
 
-  $(".portfolio-filter a").click(function () {
-    $(".portfolio-filter .active").removeClass("active");
-    $(this).addClass("active");
+var cursor = document.getElementById("cursor");
+document.body.addEventListener("mousemove", function (e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+})
 
-    var selector = $(this).attr("data-filter");
-    $container.isotope({
-      filter: selector,
-      animationOptions: {
-        duration: 500,
-        animationEngine: "jquery",
-      },
-    });
+function artpr() {
+  const checkBox = document.getElementById("art");
+  const label = document.getElementById("artchbxlabel");
+  const artprojects = document.getElementsByClassName("art");
 
-    return false;
-  });
+  if (checkBox.checked == true) {
+    label.style.textDecoration = "none";
+    for (let i = 0; i < artprojects.length; i++) {
+      artprojects[i].style.display = "none";
+    }
+  }
+  else {
+    label.style.textDecoration = "#ED6A5A wavy underline";
+    for (let i = 0; i < artprojects.length; i++) {
+      artprojects[i].style.display = "block";
+    }
+  }
+}
 
-});
+function devpr() {
+  const checkBox = document.getElementById("dev");
+  const label = document.getElementById("devchbxlabel");
+  const devprojects = document.getElementsByClassName("dev");
+
+  if (checkBox.checked == true) {
+    label.style.textDecoration = "none";
+    for (let i = 0; i < devprojects.length; i++) {
+      devprojects[i].style.display = "none";
+    }
+  }
+  else {
+    label.style.textDecoration = "#ED6A5A wavy underline";
+    for (let i = 0; i < devprojects.length; i++) {
+      devprojects[i].style.display = "block";
+    }
+  }
+}
+
+
+fetch('projects.json')
+  .then(response => {
+    return response.json();
+  }).then(data => {
+    var work = document.getElementById('projects').appendChild(document.createElement("div"));
+    work.className = "work";
+    for (let i = 0; i < data.length; i++) {
+      var div = document.createElement("div")
+      div.className = data[i].class + " project";
+      work.appendChild(div)
+
+      var url = document.createElement("a");
+      url.href = data[i].url;
+      div.appendChild(url)
+
+      var img = document.createElement("img");
+      img.src = data[i].img;
+      url.appendChild(img)
+
+      var title = document.createElement("span");
+      title.className = "title"
+      title.textContent = data[i].title;
+      div.appendChild(title)
+
+      var date = document.createElement("span");
+      date.className = "date"
+      date.textContent = data[i].year;
+      div.appendChild(date)
+
+      var desc = document.createElement("span");
+      desc.className = "desc"
+      desc.textContent = data[i].desc;
+      div.appendChild(desc)
+    }
+  })
 
