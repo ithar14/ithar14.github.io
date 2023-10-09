@@ -55,14 +55,16 @@ li {
 #home>ul>li {
   display: inline;
   float: left;
-  display: inline;
   padding-right: 8px;
+}
+.intro{
+  position:absolute;
+  height:330px;
+
 }
 
 .hello,
 .world {
-  display: flex;
-  position: absolute;
   color: #01514E;
   font-family: Inter;
   font-size: 130px;
@@ -70,16 +72,19 @@ li {
 }
 
 .world {
-
+  position:absolute;
+  top:48%;
   text-shadow: 4px -12px 9px rgba(255, 255, 255, 0.20);
-  top: 90px;
-  left: 5%;
+  line-height: 0.2;
+  left: 6%;
 }
 
 .user {
-  position: absolute;
-  top: 230px;
-  right: 40%;
+  position:absolute;
+  top:70%;
+  left:40%;
+  display:block;
+  line-height: 1;
   color: #01514E;
   font-family: Macondo;
   font-size: 25px;
@@ -87,9 +92,10 @@ li {
 }
 
 .folio {
-  position: absolute;
-  top: 240px;
-  right: 20%;
+  position:absolute;
+  line-height: 1;
+  top:78%;
+  right:0;
   color: #01514E;
   font-family: Beth Ellen;
   font-size: 35px;
@@ -97,24 +103,25 @@ li {
 
 .bio {
   position: absolute;
-  top: 330px;
+  bottom: 0;
   left: 0;
-  width: 50%;
-  font-size: 18px;
+  line-height: 1;
+  float:right;
+  font-size: 13px;
+  color: #002928;
+  font-family: Inter;
+  font-weight: 500;
 }
 
 .socials {
-
-  position: absolute;
-  top: 330px;
-  right: 12%;
+  position:absolute;
+  right:0;
+  bottom:0;
   font-size: 20px;
 }
 
 .socials>ul>li {
-
   display: inline;
-  padding-right: 40px;
 }
 
 .socials>ul>li>a {
@@ -225,11 +232,38 @@ img {
 @media only screen and (max-width: 600px) {
   #main {
     width: 100%;
+  
   }
 
   #home {
+    position: absolute;
+    top:100%;
     width: 100%;
+   
   }
+  .hello,.world,.user,.folio,.bio,.socials{
+
+    position: absolute;
+    left:0;
+    width:100%;
+    line-height:normal;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    word-wrap: break-word;
+  
+  }
+  .world{
+    line-height: 0.2;
+  }
+  .folio{
+    line-height: 1.2;
+  }
+
+  .socials{
+    bottom:-10%;
+  }
+ 
 
   #menu {
     width: 100%;
@@ -242,32 +276,6 @@ img {
     padding-right: 8px;
   }
 
-  .intro {
-    position: absolute;
-    width: 100%;
-  }
-  .hello,.world{
-    
-    width:100%;
-    font-size:27vw;
-  }
-  .user{
-    padding-top:3%;
-    bottom:40%;
-    right:20%;
-  }
-  .folio{
-    padding-top:2%;
-    right : 5%;
-  }
-  .bio{
-    width:60%;
-  }
-  .socials{
-    padding-top:3%;
-    bottom:0;
-    right:0;
-  }
   #projects {
     width: 100%;
     top: 50px;
