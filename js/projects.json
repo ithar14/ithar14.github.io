@@ -3,8 +3,8 @@
     "year":"2023",
     "month":"2",
     "desc":"evaluate your BibTex files and generate charts by Year, Top Journals, and Top Authors.",
-    "img":"https://github.com/ithar14/bibVis/raw/main/src/Logo.png",
-    "url":"bibVis/",
+    "img":"../img/bib.png",
+    "url":"../pages/bibvis.html",
     "class":"dev"
  },
  {
@@ -21,7 +21,7 @@
    "year":"2021",
    "month":"11",
    "desc":"a 3D model of a coffe cup made with blender.",
-   "img":"https://cdnb.artstation.com/p/assets/images/images/041/501/957/large/kat-ithar-2.jpg?1631872062",
+   "img":"../img/coffee.jpg",
    "url":"https://www.artstation.com/artwork/48DvYY",
    "class":"art"
  },
@@ -30,7 +30,7 @@
     "year":"2021",
     "month":"6",
     "desc":"a python based program that turns a an image to a 3D plot/file",
-    "img":"https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/590/017/datas/gallery.jpg",
+    "img":"../img/2Dimg3D.jpg",
     "url":"../pages/2Dimage3D.html",
     "class":"dev"
  },
@@ -39,7 +39,7 @@
     "year":"2020",
     "month":"9",
     "desc":"",
-    "img":"https://cdnb.artstation.com/p/assets/images/images/030/016/193/large/kat-ithar-too-much-to-handle2.jpg?1599335449",
+    "img":"../img/hands.jpg",
     "url":"https://www.artstation.com/artwork/AqQYxy",
     "class":"art"
   },
@@ -48,7 +48,7 @@
     "year":"2020",
     "month":"8",
     "desc":"",
-    "img":"https://cdna.artstation.com/p/assets/images/images/030/659/596/large/kat-ithar-lime.jpg?1601285162",
+    "img":"../img/lime.jpg",
     "url":"https://www.artstation.com/artwork/lxz4ne",
     "class":"art"
   }
