@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!--customize the display of the page or of the surrounding UI-->
-    <meta name="theme-color" content="#3c40c6" />
+    <meta name="theme-color" content="#F7F7F2" />
     <meta name="robots" content="noindex" />
 
     <title>Quuadio.</title>
@@ -17,151 +17,68 @@
     <!--icon-->
     <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="apple-touch-icon" type="image/png" href="../img/logo.png">
-    <style>
-        *::-webkit-scrollbar {
-            display: none;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 10vh;
-            height: 100%;
-            font-family: "Alata", Helvetica, Arial, sans-serif;
-            background: #EFE8DC;
-            /*#141415*/
-            position: relative;
-            font-size: 14px;
-            color: blue;
-        }
-
-        header {
-            text-align: center;
-            width: 100%;
-            height: 80vh;
-        }
-
-        a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        a:hover {
-            color: hotpink;
-        }
-
-        h1 {
-            padding-bottom: 0;
-            font-size: 20ex;
-        }
-
-        section {
-            padding-top: 0;
-            width: 45%;
-        }
-
-        img {
-            width: 100%
-        }
-
-        .shots {
-            float: right;
-        }
-
-        .cont {
-            padding-bottom: 20%;
-        }
-
-        .cont li {
-            float: left;
-            display: inline;
-            padding-right: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding-bottom: 30px;
-        }
-
-
-        @media only screen and (max-width: 700px) {
-            body {
-                padding: 0;
-                margin: 0;
-            }
-
-            section {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 20vw;
-                width: 100%;
-            }
-
-            .shots {
-                float: left;
-                padding-bottom: 20px;
-            }
-
-        }
-    </style>
+    <link href="../css/page.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <h1>Quuadio.</h1>
-        <nav><a href="../index.html"><b>
-                    < back </b></a></nav>
-    </header>
-    <section class="shots">
-        <h2>screenshots</h2>
-        <div><img src="../img/quuadio.gif"></br>
-            <img src="../img/quuadio.jpg"></br>🎀
+
+    <nav class="back"><a href="../index.html"><b>
+                ← </b></a></nav>
+
+    <div class="container">
+
+        <div class="main">
+            <header>
+                <h1>Quuadio.</h1>
+            </header>
+
+            <section class="desc">
+                <h2>description</h2>
+                <p>an experimental Project Started on QChack21✨
+                    on Quantum interference
+                    and data visualization/sonification</br></br>
+                    that uses IBM quantum Computer data
+                    of the binary code of each letter
+                    and turn it into sound </p>
+                <h2>inspiration</h2>
+                <p><a href="https://www.jrussellhuffman.com/joyvazirani/">Joel Russell Huffman's </a>recreation
+                    of Joy Division's Unknown Pleasures
+                    using Bernstein-Vazirani algorithm</p>
+            </section>
+
+            <section class="upd">
+                <h2>built with</h2>
+                <p>
+                    <li>Python = [Qiskit, Numpy, Pandas,SciPy]</li>
+                    <li>JavaScript = [P5.js]</li>
+                    <li>HTML5</li>
+                    <li>Audacity</li>
+                </p>
+            </section>
+
+            <section class="cont">
+                <h2>links</h2>
+                <p>
+                    <li><a href="https://ithar14.github.io/Quuadio/">Quuadio</a></li>
+                </p>
+                <p>
+                    <li><a href="https://devpost.com/software/quuadio">DevPost</a></li>
+                </p>
+                <p>
+                    <li><a href="https://github.com/ithar14/Quuadio">Github rep</a></li>
+                </p>
+            </section>
         </div>
-    </section>
-    <section class="desc">
-        <h2>description</h2>
-        <p>an experimental Project Started on QChack21✨
-            on Quantum interference
-            and data visualization/sonification</br></br>
-            that uses IBM quantum Computer data
-            of the binary code of each letter
-            and turn it into sound </p>
-        <h2>inspiration</h2>
-        <p><a href="https://www.jrussellhuffman.com/joyvazirani/">Joel Russell Huffman's </a>recreation
-            of Joy Division's Unknown Pleasures
-            using Bernstein-Vazirani algorithm</p>
-    </section>
-
-    <section class="upd">
-        <h2>built with</h2>
-        <p>
-            <li>Python = [Qiskit, Numpy, Pandas,SciPy]</li>
-            <li>JavaScript = [P5.js]</li>
-            <li>HTML5</li>
-            <li>Audacity</li>
-        </p>
-    </section>
-
-    <section class="cont">
-        <h2>links</h2>
-        <p>
-            <li><a href="Quuadio.glitch.me">Quuadio</a></li>
-        </p>
-        <p>
-            <li><a href="https://devpost.com/software/quuadio">DevPost</a></li>
-        </p>
-        <p>
-            <li><a href="https://github.com/ithar14/Quuadio">Github rep</a></li>
-        </p>
-    </section>
-
-
-    <footer>
-        -- ithar -- Oct/Dec 2021 --
-    </footer>
-
+        <section class="shots">
+            <h2>screenshots</h2>
+            <div><img src="../img/quuadio.gif"></br>
+                <img src="../img/quuadio.jpg"></br>🎀
+            </div>
+        </section>
+        <footer>
+            -- ithar -- Oct/Dec 2021 --
+        </footer>
+    </div>
 </body>
 
 
