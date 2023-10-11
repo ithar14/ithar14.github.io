@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Inter';
+    src: URL('../font/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Alata';
+    src: URL('../font/Alata-Regular.ttf') format('truetype');
+}
+  
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 10vh;
+    height: 100%;
+    font-family:  Helvetica, Arial, sans-serif;
+    background-color: #F7F7F2;
+    /*#141415*/
+    position: relative;
+    font-size: 14px;
+    color: #002928;
+    text-align: justify;
+    font-family: Inter;
+}
+
+.container {
+    width: 100%;
+    height: 60vh;
+}
+
+.main {
+    width: 60%;
+
+    float: left;
+    padding-right: 5%;
+
+}
+
+.shots {
+
+    float: right;
+    width: 35%;
+
+
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 5ex;
+    font-family: Alata;
+    font-size: 5ex;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+}
+
+.back {
+    font-size: 10ex;
+    font-family: Alata;
+    color: #000;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back>a {
+    color: #002928;
+}
+
+.back>a:hover {
+    color: #ED6A5A;
+}
+
+a {
+    text-decoration: none;
+    color: #ED6A5A;
+
+}
+
+a:hover {
+    color: #731DD8;
+}
+
+section {
+    padding-top: 0;
+
+}
+
+img {
+    width: 100%;
+
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+
+
+.cont {
+    padding-bottom: 20%;
+}
+
+.cont li {
+    float: left;
+    display: inline;
+    padding-right: 8px;
+}
+
+footer {
+
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shots,
+    .main {
+        width: 100%;
+    }
+
+    h1 {
+        padding-top: 20%;
+        font-size: 14vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        height: 100%;
+    }
+
+
+}
