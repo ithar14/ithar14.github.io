@@ -34,11 +34,13 @@ function artpr() {
 
   if (checkBox.checked == true) {
     label.style.textDecoration = "none";
+    label.style.color = "#0029284A";
     for (let i = 0; i < artprojects.length; i++) {
       artprojects[i].style.display = "none";
     }
   }
   else {
+    label.style.color = "#002928";
     label.style.textDecoration = "#ED6A5A wavy underline";
     for (let i = 0; i < artprojects.length; i++) {
       artprojects[i].style.display = "block";
@@ -52,12 +54,14 @@ function devpr() {
   const devprojects = document.getElementsByClassName("dev");
 
   if (checkBox.checked == true) {
+    label.style.color = "#0029284A";
     label.style.textDecoration = "none";
     for (let i = 0; i < devprojects.length; i++) {
       devprojects[i].style.display = "none";
     }
   }
   else {
+    label.style.color = "#002928";
     label.style.textDecoration = "#ED6A5A wavy underline";
     for (let i = 0; i < devprojects.length; i++) {
       devprojects[i].style.display = "block";
