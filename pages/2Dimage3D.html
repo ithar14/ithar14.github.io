@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!--customize the display of the page or of the surrounding UI-->
-    <meta name="theme-color" content="#3c40c6" />
+    <meta name="theme-color" content="#F7F7F2" />
     <meta name="robots" content="noindex" />
 
     <title>2Dimage3D.</title>
@@ -17,139 +17,55 @@
     <!--icon-->
     <link rel="icon" type="image/png" href="../img/logo.png">
     <link rel="apple-touch-icon" type="image/png" href="../img/logo.png">
-    <style>
-        *::-webkit-scrollbar {
-            display: none;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 10vh;
-            height: 100%;
-            font-family: "Alata", Helvetica, Arial, sans-serif;
-            background: #EFE8DC;
-            /*#141415*/
-            position: relative;
-            font-size: 14px;
-            color: blue;
-        }
-
-        header {
-            text-align: center;
-            width: 100%;
-            height: 80vh;
-        }
-
-        a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        a:hover {
-            color: hotpink;
-        }
-
-        h1 {
-            padding-bottom: 0;
-            font-size: 15ex;
-        }
-
-        section {
-            padding-top: 0;
-            width: 45%;
-        }
-
-        img {
-            width: 100%
-        }
-
-        .shots {
-            float: right;
-        }
-
-        .cont {
-            padding-bottom: 20%;
-        }
-
-        .cont li {
-            float: left;
-            display: inline;
-            padding-right: 8px;
-        }
-
-        footer {
-            text-align: center;
-            padding-bottom: 30px;
-        }
-
-
-        @media only screen and (max-width: 700px) {
-            body {
-                padding: 0;
-                margin: 0;
-            }
-
-            section {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 14vw;
-                width: 100%;
-            }
-
-            .shots {
-                float: left;
-                padding-bottom: 20px;
-            }
-
-        }
-    </style>
+    <link href="../css/page.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <h1>2Dimage3D.</h1>
-        <nav><a href="../index.html"><b>
-                    < back </b></a></nav>
-    </header>
-    <section class="shots">
-        <h2>screenshots</h2>
-        <div><img
-                src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/590/017/datas/gallery.jpg"></br>
-            🎀</div>
-    </section>
-    <section class="desc">
-        <h2>description</h2>
-        <p>turn an image to a 3D plot/file</br></br>
-        </p>
-    </section>
+    <nav class="back"><a href="../index.html"><b>
+                ← </b></a></nav>
+    <div class="container">
 
-    <section class="upd">
-        <h2>built with</h2>
-        <p>
-            <li>Python = [PIL, matplotlib, Numpy, Numpy-stl]</li>
-            <li>jupyter-notebook</li>
-        </p>
-    </section>
+        <div class="main">
+            <header>
+                <h1>2Dimage3D.</h1>
+            </header>
+            <section class="desc">
+                <h2>description</h2>
+                <p>turn an image to a 3D plot/file</br></br>
+                </p>
+            </section>
 
-    <section class="cont">
-        <h2>links</h2>
-        <p>
-            <li><a href="https://devpost.com/software/2dimage3d">DevPost</a></li>
-        </p>
-        <p>
-            <li><a href="https://github.com/ithar14/2Dimage3D">Github rep</a></li>
-        </p>
-        <p>
-            <li><a href="https://slides.com/ithar/codeinplace-2021">presentation</a></li>
-        </p>
-    </section>
+            <section class="upd">
+                <h2>built with</h2>
+                <p>
+                    <li>Python = [PIL, matplotlib, Numpy, Numpy-stl]</li>
+                    <li>jupyter-notebook</li>
+                </p>
+            </section>
 
-    <footer>
-        -- ithar -- June 2021 --
-    </footer>
+            <section class="cont">
+                <h2>links</h2>
+                <p>
+                    <li><a href="https://devpost.com/software/2dimage3d">DevPost</a></li>
+                </p>
+                <p>
+                    <li><a href="https://github.com/ithar14/2Dimage3D">Github rep</a></li>
+                </p>
+                <p>
+                    <li><a href="https://slides.com/ithar/codeinplace-2021">slides</a></li>
+                </p>
+            </section>
+
+        </div>
+        <section class="shots">
+            <h2>screenshots</h2>
+            <div><img src="../img/2Dimg3D.jpg"></br>
+                🐍</div>
+        </section>
+        <footer>
+            -- ithar -- June 2021 --
+        </footer>
+    </div>
 
 </body>
 
